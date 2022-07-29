@@ -78,7 +78,7 @@
 
 ```
 ## Steps To install the project
-``
+```
 npm install
 npm run server
 ```
