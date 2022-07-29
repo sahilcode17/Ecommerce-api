@@ -77,6 +77,12 @@
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZTI4NGJjMWMwNWZjMmYwNGEwNTk3ZSIsImlhdCI6MTY1OTAyMjE5MCwiZXhwIjoxNjYxNjE0MTkwfQ.kBT_Iamw7pJccO0BXhBaWCJXuFO6FX6vVUmSOKqnduY'
 
 ```
+## Step Before Installation :
+1. clone this project : git clone https://github.com/sahilcode17/Ecommerce-api.git 
+2. Open the project in any IDE eg. VS Code or sublime
+3. Make sure you have npm and nodejs install 
+4. If not install from the nodejs website 
+
 ## Steps To install the project
 ```
 npm install
