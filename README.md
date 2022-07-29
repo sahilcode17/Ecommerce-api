@@ -88,3 +88,13 @@
 npm install
 npm run server
 ```
+## Possible Error :
+If you are not able to connect to mongodb do the following :
+    1. Create Mongodb atlas account 
+    2. After go to dashboard there you will se connect button in that you will have connect with your application
+    3. copy that string and replace with the existing string in db.js file ( variable uri)
+    4. If still not able to connect add your ip address in networks in mongodb atlas dashboard
+If not able to run run install 
+    1. remove the pacakages name that is causing the error and manually install them 
+If not able to run api's 
+    2. Check documentation for curl , past it in postman you will be able to see possible error 

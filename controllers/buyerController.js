@@ -8,7 +8,17 @@ const { json } = require('express');
 // Get a list of all sellers
 const getlistofseller = asyncHandler( async (req, res) => {
     const sellers = await User.find({typeofuser:'seller'});
-    res.status(200).json(sellers);
+    const sellerslist = sellers.map(seller => {
+        return {
+            _id: seller.id,
+            username: seller.username,
+            typeofuser: seller.typeofuser
+        }
+    }
+    )
+    res.status(200).json({
+        sellerslist
+    });
 });
 // GET /api/buyer/seller-catalog/:seller_id
 // Get the catalog of a seller by seller_id
