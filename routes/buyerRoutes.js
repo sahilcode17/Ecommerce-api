@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const {getallSeller, getSeller, setSeller, updateSeller} = require('../controllers/buyerController');
-router.route('/').get(getallSeller).post(setSeller);
-router.route('/:id').get(getSeller).put(updateSeller);
+const {getlistofseller ,getsellerbyid,createorder } = require('../controllers/buyerController');
+const {protect} = require('../middleware/authMiddleware');
+router.route('/list-of-sellers').get(getlistofseller);
+router.route('/seller-catalog/:sellerid').get(getsellerbyid);
+router.route('/create-order/:sellerid').post(createorder);
+
 
 
 
