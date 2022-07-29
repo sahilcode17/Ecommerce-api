@@ -1,4 +1,4 @@
-#Hybr1d Ecommerce Assigment
+# API for Ecommerce Application
 
 ## APIS
 ### Auth APIs
